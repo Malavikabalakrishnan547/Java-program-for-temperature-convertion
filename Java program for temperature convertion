@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class math {
+
+    public static void main(String args[]) {
+
+        Scanner s = new Scanner(System.in);
+        float cel, fer = 0;
+        String ch, f = null, c;
+        System.out.println("Enter the mode of temperature(f-fahrenheit & c-celsius)");
+        ch = s.nextLine();
+
+        if (ch == f) {
+            System.out.println("Enter the temp in fahrenheit:");
+            fer = s.nextFloat();
+            cel = (fer - 32) * 5 / 9;
+            System.out.println("Temperature in celsius" + cel);
+        } else {
+            System.out.println("Enter the temp in celsius:");
+            cel = s.nextFloat();
+            fer = (cel * 9 / 5) + 32;
+            System.out.println("Temperature in fahrenheit:" + fer);
+        }
+
+    }
+}
+
+//OUTPUT OF THE CODE
+Enter the mode of temperature(f-fahrenheit & c-celsius)
+f
+Enter the temp in celsius:
+36
+Temperature in fahrenheit:96.8
